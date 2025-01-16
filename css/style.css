@@ -123,6 +123,7 @@ header .container nav ul {
 
 #nav-tog {
     color: var(--main-color);
+    font-size: 30px;
 }
 
 #nav-tog:hover+ul {
