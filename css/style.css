@@ -126,8 +126,8 @@ header .container nav ul {
     font-size: 30px;
 }
 
-#nav-tog:hover+ul {
-    display: flex;
+header .container .show {
+    display: flex !important;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -157,7 +157,7 @@ header .container nav ul li a {
     }
 }
 
-header .container nav ul li a:active,
+header .container nav ul li a.active,
 header .container nav ul li a:hover {
     color: var(--fourth-color);
     background-color: var(--main-color);
@@ -309,7 +309,8 @@ header .container .social i:hover {
         flex-direction: column-reverse;
     }
 
-    .hero .hero-info {
+    .hero  .container .hero-info {
+       width: 100%;
        text-align: center;
     }
 
@@ -339,8 +340,7 @@ header .container .social i:hover {
 
 /* start-hero-section */
 
-.services {
-    
+.services {  
     padding: 50px 0;
 }
 
@@ -577,12 +577,12 @@ header .container .social i:hover {
 }
 
 .statistics .container .stat::before {
-    content: "0101100100011100101001111001";
+    content: "0101100100011100101001111001111001010011110011110";
     background-color: var(--main-color);
     padding: 0 10px;
     position: absolute;
     top: 0;
-    transform: translateX(400px);
+    transform: translateX(500px);
     transition: transform 0.5s ease;
 }
 
@@ -592,12 +592,12 @@ header .container .social i:hover {
 
 
 .statistics .container .stat::after {
-    content: "0101100100011100101001111001";
+    content: "0101100100011100101001111001111001010011110011110";
     background-color: var(--main-color);
     padding: 0 10px;
     position: absolute;
     bottom: 0;
-    transform: translateX(-400px);
+    transform: translateX(-500px);
     transition: transform 0.5s ease;
 }
 
